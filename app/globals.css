@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+
+:root {
+  --yellow: #F7B827;
+  --light-yellow: #F6E0AE;
+  --blue: #0B2658;
+  --light-blue: #7AA1E2;
+  --text-huge: 15rem;
+}
+
+@theme inline {
+  --color-yellow: var(--yellow);
+  --color-light-yellow: var(--light-yellow);
+  --color-blue: var(--blue);
+  --color-light-blue: var(--light-blue);
+
+  --text-huge: var(--text-huge);
+
+  
+}
+
+html, body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-indie-flower);
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-gochi-hand);
+}
+
+@keyframes firework {
+  0% {
+    transform: scaleY(0) translateY(0);
+    opacity: 0;
+  }
+  5% {
+    transform: scaleY(1.2) translateY(-10px);
+    opacity: 1;
+  }
+  10% {
+    transform: scaleY(1) translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1) translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.firework-line {
+  @apply absolute bg-white rounded-full w-2;
+  height: 20px;
+  transform-origin: bottom center;
+  animation: firework 15s ease-out infinite both;
+}
+
+.top-\[15\%\].right-\[15\%\] .firework-line {
+  animation-delay: 5s;
+}
+.bottom-\[20\%\].left-\[30\%\] .firework-line {
+  animation-delay: 10s;
+}
