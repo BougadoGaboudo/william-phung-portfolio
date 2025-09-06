@@ -6,9 +6,8 @@ export default function TabsExpEdu() {
   return (
     <>
       <Wrapper>
-        <div className="flex justify-center gap-8 flex-col md:flex-row my-10">
+        <div className="flex justify-center gap-8 flex-col md:flex-row my-20">
           <Experiences />
-
           <Education />
         </div>
       </Wrapper>

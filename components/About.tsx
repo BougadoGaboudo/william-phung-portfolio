@@ -14,7 +14,7 @@ export default function About() {
               height={400}
               className="w-80 md:w-96 m-auto"
             />
-            <div className="flex flex-col justify-center items-center gap-8 md:gap-0">
+            <div className="flex flex-col justify-center gap-8 md:gap-0">
               <h1 className="text-white text-9xl drop-shadow-[2px_8px_0px_var(--yellow)] leading-tight">
                 About me
               </h1>
@@ -22,8 +22,8 @@ export default function About() {
                 <span className="text-4xl">Bonjour,</span>
                 <br />
                 <br />
-                Je m’appelle PHUNG William, étudiant à Sorbonne Université en
-                licence profesionnelle Projet Web et Mobile à Sorbonne
+                Je m’appelle PHUNG William, étudiant en
+                licence professionnelle Projet Web et Mobile à Sorbonne
                 Université dès septembre 2025. Je recherche une alternance en
                 développement front end. Le webdesign m’intéresse également,
                 même si je débute dans ce domaine. d(´▽｀*)

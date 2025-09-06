@@ -1,4 +1,6 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Faq from "@/components/Faq";
 import HeroArea from "@/components/HeroArea";
 import TabsExpEdu from "@/components/TabsEduExp";
 
@@ -8,6 +10,8 @@ export default function Home() {
       <HeroArea />
       <About />
       <TabsExpEdu />
+      <Faq />
+      <Contact />
     </>
   );
 }
