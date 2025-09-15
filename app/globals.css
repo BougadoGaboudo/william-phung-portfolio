@@ -1,12 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
 :root {
-  --yellow: #F7B827;
-  --light-yellow: #F6E0AE;
-  --blue: #0B2658;
-  --light-blue: #7AA1E2;
+  --yellow: #f7b827;
+  --light-yellow: #f6e0ae;
+  --blue: #0b2658;
+  --light-blue: #7aa1e2;
   --text-huge: 15rem;
 }
 
@@ -17,11 +16,10 @@
   --color-light-blue: var(--light-blue);
 
   --text-huge: var(--text-huge);
-
-  
 }
 
-html, body {
+html,
+body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -29,8 +27,31 @@ html, body {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-gochi-hand);
+}
+
+.bg-paper-grid {
+  background-image: linear-gradient(
+      to right,
+      var(--light-blue) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, var(--light-blue) 1px, transparent 1px);
+  background-size: 3rem 3rem;
+  background-position: -1.75rem -1.75rem;
+  pointer-events: none;
+  position: absolute;
+  top: -2.5rem;
+  bottom: -2.5rem;
+  left: -5rem;
+  right: -5rem;
+  z-index: 0;
 }
 
 @keyframes firework {
