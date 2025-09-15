@@ -8,7 +8,7 @@ export default function About() {
         <Wrapper>
           <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-20 text-blue">
             <Image
-              src="/About.svg"
+              src="/img/About.svg"
               alt=""
               width={400}
               height={400}
@@ -22,11 +22,11 @@ export default function About() {
                 <span className="text-4xl">Bonjour,</span>
                 <br />
                 <br />
-                Je m’appelle PHUNG William, étudiant en
-                licence professionnelle Projet Web et Mobile à Sorbonne
-                Université dès septembre 2025. Je recherche une alternance en
-                développement front end. Le webdesign m’intéresse également,
-                même si je débute dans ce domaine. d(´▽｀*)
+                Je m’appelle PHUNG William, étudiant en licence professionnelle
+                Projet Web et Mobile à Sorbonne Université dès septembre 2025.
+                Je recherche une alternance en développement front end. Le
+                webdesign m’intéresse également, même si je débute dans ce
+                domaine. d(´▽｀*)
                 <br />
                 <br />
                 Bien que je souhaite me spécialiser en front end, mon BTS SIO

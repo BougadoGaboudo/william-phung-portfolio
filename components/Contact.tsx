@@ -24,7 +24,7 @@ export default function Contact() {
                 target="_blank"
               >
                 <Image
-                  src="/linkedin.png"
+                  src="/img/linkedin.png"
                   alt="Linkedin"
                   width={32}
                   height={32}
@@ -33,7 +33,7 @@ export default function Contact() {
               </Link>
               <Link href="https://github.com/BougadoGaboudo/" target="_blank">
                 <Image
-                  src="/github.png"
+                  src="/img/github.png"
                   alt="Github"
                   width={32}
                   height={32}

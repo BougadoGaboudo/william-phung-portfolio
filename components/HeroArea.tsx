@@ -11,7 +11,7 @@ export default function HeroArea() {
           </h1>
           <Image
             className="absolute -top-42 -right-15"
-            src="/HeroArea.png"
+            src="/img/HeroArea.png"
             alt=""
             width={350}
             height={350}
