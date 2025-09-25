@@ -14,7 +14,7 @@ export default function Skills() {
             Skills & Tools
           </h1>
           <motion.div
-            className="mt-10 flex flex-wrap gap-16 justify-center"
+            className="mt-10 flex flex-wrap gap-5 md:gap-2 justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
@@ -42,7 +42,7 @@ export default function Skills() {
                     width={64}
                     height={64}
                   />
-                  <p className="px-4 py-2 rounded-lg absolute -bottom-10 bg-light-yellow border-2 border-yellow text-blue text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                  <p className="px-4 py-2 rounded-lg absolute -bottom-10 bg-light-yellow border-2 border-yellow text-blue text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center z-10 pointer-events-none group-hover:pointer-events-auto">
                     {skill.name}
                   </p>
                 </motion.div>
