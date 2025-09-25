@@ -6,7 +6,7 @@
   --light-yellow: #f6e0ae;
   --blue: #0b2658;
   --light-blue: #7aa1e2;
-  --text-huge: 15rem;
+  --text-huge: clamp(5rem, 2.6923rem + 10.2564vw, 15rem);
 }
 
 @theme inline {
@@ -49,9 +49,15 @@ h6 {
   position: absolute;
   top: -2.5rem;
   bottom: -2.5rem;
-  left: -5rem;
-  right: -5rem;
+  inset-inline: 0;
   z-index: 0;
+}
+
+@media (min-width: 1199px) {
+  .bg-paper-grid {
+    left: -5rem;
+    right: -5rem;
+  }
 }
 
 @keyframes firework {

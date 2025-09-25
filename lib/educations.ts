@@ -1,4 +1,10 @@
-export const educations = [
+type Education = {
+  name: string;
+  date: string;
+  location: string;
+}
+
+export const educations: Education[] = [
   {
     name: "Licence professionnelle Projet Web et Mobile",
     date: "2025 / 2026",

@@ -1,4 +1,11 @@
-export const experiences = [
+type Experience = {
+  name: string;
+  date: string;
+  company: string;
+  description: string;
+}
+
+export const experiences: Experience[] = [
   {
     name: "Développeur Full Stack",
     date: "déc 2024 / janv 2025 · Stage de 2 mois",
