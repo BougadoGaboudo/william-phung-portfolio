@@ -15,11 +15,13 @@ export default function About() {
               className="w-80 md:w-96 m-auto"
             />
             <div className="flex flex-col justify-center gap-8 md:gap-0">
-              <h1 className="text-white text-9xl drop-shadow-[2px_8px_0px_var(--yellow)] leading-tight">
+              <h1 className="text-white text-[clamp(4rem,3.0769rem+4.1026vw,8rem)] drop-shadow-[0.05em_0.08em_0_var(--yellow)] leading-tight text-center md:text-left">
                 About me
               </h1>
-              <p className="max-w-md text-lg md:max-w-2xl">
-                <span className="text-4xl">Bonjour,</span>
+              <p className="max-w-md text-lg md:max-w-2xl px-6 md:px-0">
+                <span className="text-[clamp(1.25rem,1.0192rem+1.0256vw,2.25rem)]">
+                  Bonjour,
+                </span>
                 <br />
                 <br />
                 Je m’appelle PHUNG William, étudiant en licence professionnelle

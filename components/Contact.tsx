@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <>
       <footer className="flex items-center justify-center py-10">
-        <div className="flex items-center justify-center gap-16 text-center">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-16 text-center">
           <div className="flex flex-col justify-center items-center gap-2">
             <h2 className="text-white text-5xl drop-shadow-[2px_4px_0px_var(--yellow)] leading-tight">
               Contact
