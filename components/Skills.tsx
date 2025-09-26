@@ -10,9 +10,15 @@ export default function Skills() {
     <>
       <div className="my-30">
         <Wrapper>
-          <h1 className="text-white text-6xl drop-shadow-[2px_6px_0px_var(--yellow)] leading-tight text-center">
+          <motion.h1
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="text-white text-6xl drop-shadow-[2px_6px_0px_var(--yellow)] leading-tight text-center"
+          >
             Skills & Tools
-          </h1>
+          </motion.h1>
           <motion.div
             className="mt-10 flex flex-wrap gap-5 md:gap-2 justify-center"
             initial="hidden"
@@ -21,7 +27,7 @@ export default function Skills() {
             variants={{
               hidden: {},
               visible: {
-                transition: { staggerChildren: 0.1 },
+                transition: { staggerChildren: 0.05 },
               },
             }}
           >
@@ -34,7 +40,7 @@ export default function Skills() {
                     hidden: { opacity: 0, scale: 0.8 },
                     visible: { opacity: 1, scale: 1 },
                   }}
-                  transition={{ duration: 0.4, ease: "easeOut" }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
                 >
                   <Image
                     src={skill.img}

@@ -7,9 +7,15 @@ export default function Experiences() {
   return (
     <>
       <div className="flex flex-col gap-4 rounded-tr-[4rem] rounded-tl-xl rounded-br-xl rounded-bl-[4rem] max-w-md mx-auto md:mx-0">
-        <h1 className="text-white text-6xl drop-shadow-[2px_6px_0px_var(--yellow)] leading-tight text-center md:text-left">
+        <motion.h1
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="text-white text-6xl drop-shadow-[2px_6px_0px_var(--yellow)] leading-tight text-center md:text-left"
+        >
           Experiences
-        </h1>
+        </motion.h1>
 
         {experiences.map((experience, index) => {
           return (

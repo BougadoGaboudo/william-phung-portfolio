@@ -18,18 +18,47 @@ import {
 } from "@/components/ui/collapsible";
 import { ExternalLink } from "lucide-react";
 
+const MotionCarouselItem = motion.create(CarouselItem) as any;
+const itemVariants = {
+  hidden: { opacity: 0, y: 50, scale: 0.9 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.2,
+      delay: i * 0.05,
+      ease: "easeOut",
+    },
+  }),
+};
+
 export default function Projects() {
   return (
     <>
       <div className="my-30 px-8">
         <Wrapper>
-          <h1 className="mb-8 text-white text-6xl drop-shadow-[2px_6px_0px_var(--yellow)] leading-tight text-center">
+          <motion.h1
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="mb-8 text-white text-6xl drop-shadow-[2px_6px_0px_var(--yellow)] leading-tight text-center"
+          >
             Projects
-          </h1>
+          </motion.h1>
           <Carousel>
             <CarouselContent className="-ml-1">
               {projects.map((project, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <MotionCarouselItem
+                  key={index}
+                  className="md:basis-1/2 lg:basis-1/3"
+                  custom={index}
+                  variants={itemVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.2 }}
+                >
                   <div className="p-4 block bg-light-yellow rounded-lg">
                     <h6 className="text-blue text-2xl mb-2 text-center">
                       {project.title}
@@ -99,7 +128,7 @@ export default function Projects() {
                       </Collapsible>
                     </div>
                   </div>
-                </CarouselItem>
+                </MotionCarouselItem>
               ))}
             </CarouselContent>
             <CarouselPrevious />
