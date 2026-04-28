@@ -34,28 +34,22 @@ export default function About() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.2 }}
-                className="max-w-md text-lg md:max-w-2xl px-6 md:px-0"
+                className="max-w-md text-xl md:max-w-2xl px-6 md:px-0"
               >
-                <span className="text-[clamp(1.25rem,1.0192rem+1.0256vw,2.25rem)]">
-                  Bonjour,
-                </span>
+                <span className="text-[clamp(1.25rem,1.0192rem+1.0256vw,2.25rem)] whitespace-pre-line">Bonjour,</span>
                 <br />
                 <br />
-                Je m’appelle PHUNG William, étudiant en licence professionnelle
-                Projet Web et Mobile à Sorbonne Université. Je recherche une
-                alternance en développement front end. Le webdesign m’intéresse
-                également, même si je débute dans ce domaine. d(´▽｀*)
+                Je m’appelle PHUNG William, développeur web spécialisé en front end, actuellement à la recherche d'un
+                emploi. Le webdesign m’intéresse également, même si je débute dans ce domaine. d(´▽｀*)
                 <br />
                 <br />
-                Bien que je souhaite me spécialiser en front end, mon BTS SIO
-                option SLAM m’a tout de même permis d’acquérir des compétences
-                solides en back-end, ce qui me donne une vision globale des
-                projets. ( •̀ω •́ゞ) Phrase un peu bateau mais oui, j’aime
-                concevoir des interfaces modernes et soignées !
+                Bien que je souhaite me spécialiser en front end, mon BTS SIO option SLAM m’a tout de même permis
+                d’acquérir des compétences solides en back-end, ce qui me donne une vision globale des projets. ( •̀ω
+                •́ゞ) Phrase un peu bateau mais oui, j’aime concevoir des interfaces modernes et soignées !
                 <br />
                 <br />
-                PS : L’illustration est également ma passion et mon rêve est de
-                devenir illustrateur professionnel un jour !
+                PS : L’illustration est également ma passion et mon rêve est de devenir illustrateur professionnel un
+                jour !
               </motion.p>
             </div>
           </div>

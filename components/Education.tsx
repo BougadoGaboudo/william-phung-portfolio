@@ -30,9 +30,9 @@ export default function Education() {
                 ease: "easeOut",
               }}
             >
-              <p className="text-blue text-lg">{education.date}</p>
+              <p className="text-blue text-xl">{education.date}</p>
               <h6 className="text-blue text-2xl">{education.name}</h6>
-              <p className="text-blue text-lg">{education.location}</p>
+              <p className="text-blue text-xl">{education.location}</p>
             </motion.div>
           );
         })}

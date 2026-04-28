@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Wrapper from "./Wrapper";
 import { faqs } from "@/lib/faqs";
 import { motion } from "framer-motion";
@@ -46,19 +41,14 @@ export default function Faq() {
                   {Array.isArray(faq.answer) ? (
                     <AccordionContent className="px-8 pb-8 space-y-2">
                       {faq.answer.map((answer, index) => (
-                        <p
-                          key={index}
-                          className="text-blue text-lg whitespace-pre-line"
-                        >
+                        <p key={index} className="text-blue text-xl whitespace-pre-line">
                           {answer}
                         </p>
                       ))}
                     </AccordionContent>
                   ) : (
                     <AccordionContent>
-                      <p className="px-8 pb-8 text-blue text-lg">
-                        {faq.answer}
-                      </p>
+                      <p className="px-8 pb-8 text-blue text-xl">{faq.answer}</p>
                     </AccordionContent>
                   )}
                 </MotionAccordionItem>

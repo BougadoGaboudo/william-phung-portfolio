@@ -42,13 +42,8 @@ export default function Skills() {
                   }}
                   transition={{ duration: 0.3, ease: "easeOut" }}
                 >
-                  <Image
-                    src={skill.img}
-                    alt={skill.name}
-                    width={64}
-                    height={64}
-                  />
-                  <p className="px-4 py-2 rounded-lg absolute -bottom-10 bg-light-yellow border-2 border-yellow text-blue text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center z-10 pointer-events-none group-hover:pointer-events-auto">
+                  <Image src={skill.img} alt={skill.name} width={64} height={64} />
+                  <p className="px-4 py-2 rounded-lg absolute -bottom-10 bg-light-yellow border-2 border-yellow text-blue text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center z-10 pointer-events-none group-hover:pointer-events-auto">
                     {skill.name}
                   </p>
                 </motion.div>

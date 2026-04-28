@@ -5,7 +5,7 @@ type Faq = {
 
 export const faqs: Faq[] = [
    {question: "Que recherches-tu ?",
-    answer: "Actuellement, je recherche une alternance en développement front end (rythme 2 semaines université / 2 semaines entreprise)."
+    answer: "Actuellement, je recherche un poste en développement front end."
    }, 
    {
        question: "As-tu déjà travaillé en équipe ?",

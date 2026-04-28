@@ -5,11 +5,11 @@ type Education = {
 }
 
 export const educations: Education[] = [
-  {
-    name: "Licence professionnelle Projet Web et Mobile",
-    date: "2025 / 2026",
-    location: "Sorbonne Université - 75005 Paris",
-  },
+  // {
+  //   name: "Licence professionnelle Projet Web et Mobile",
+  //   date: "2025 / 2026",
+  //   location: "Sorbonne Université - 75005 Paris",
+  // },
   {
     name: "BTS SIO option SLAM",
     date: "2023 / 2025",

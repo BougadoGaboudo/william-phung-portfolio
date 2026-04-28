@@ -31,10 +31,10 @@ export default function Experiences() {
                 ease: "easeOut",
               }}
             >
-              <p className="text-blue text-lg">{experience.date}</p>
+              <p className="text-blue text-xl">{experience.date}</p>
               <h6 className="text-blue text-2xl">{experience.name}</h6>
-              <p className="text-blue text-lg">{experience.company}</p>
-              <p className="text-blue text-lg">{experience.description}</p>
+              <p className="text-blue text-xl">{experience.company}</p>
+              <p className="text-blue text-xl">{experience.description}</p>
             </motion.div>
           );
         })}
