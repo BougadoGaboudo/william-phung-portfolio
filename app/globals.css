@@ -17,6 +17,10 @@
   --text-huge: clamp(5rem, 2.6923rem + 10.2564vw, 15rem);
 }
 
+::selection {
+  background-color: var(--yellow);
+}
+
 @theme inline {
   --color-yellow: var(--yellow);
   --color-light-yellow: var(--light-yellow);
