@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: "Patrick Hand";
+  src: url("/font/PatrickHand-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --yellow: #f7b827;
   --light-yellow: #f6e0ae;
@@ -23,7 +31,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: var(--font-indie-flower);
+  font-family: "Patrick Hand";
   scroll-behavior: smooth;
 }
 
@@ -37,11 +45,8 @@ h6 {
 }
 
 .bg-paper-grid {
-  background-image: linear-gradient(
-      to right,
-      var(--light-blue) 1px,
-      transparent 1px
-    ),
+  background-image:
+    linear-gradient(to right, var(--light-blue) 1px, transparent 1px),
     linear-gradient(to bottom, var(--light-blue) 1px, transparent 1px);
   background-size: 3rem 3rem;
   background-position: -1.75rem -1.75rem;

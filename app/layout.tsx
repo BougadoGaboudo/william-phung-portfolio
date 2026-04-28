@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import { Gochi_Hand, Indie_Flower } from "next/font/google";
+import { Gochi_Hand } from "next/font/google";
 import "./globals.css";
 import FireworksPos from "@/components/FireworksPos";
 
 const gochiHand = Gochi_Hand({
   variable: "--font-gochi-hand",
-  weight: "400",
-});
-
-const indieFlower = Indie_Flower({
-  variable: "--font-indie-flower",
   weight: "400",
 });
 
@@ -25,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${indieFlower.variable} ${gochiHand.variable} antialiased bg-linear-to-br from-light-yellow to-yellow min-h-screen`}
-      >
+      <body className={`${gochiHand.variable} antialiased bg-linear-to-br from-light-yellow to-yellow min-h-screen`}>
         <FireworksPos />
         {children}
       </body>
