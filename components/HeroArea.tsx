@@ -12,7 +12,7 @@ export default function HeroArea() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="text-blue text-[clamp(1.5rem,1.1538rem+1.5385vw,3rem)] absolute -top-4 md:-top-2"
+            className="text-blue text-[clamp(1.5rem,1.1538rem+1.5385vw,3rem)] absolute -top-5 md:-top-4"
           >
             PHUNG William
           </motion.p>
